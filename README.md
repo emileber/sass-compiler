@@ -9,7 +9,7 @@ Works only in Windows.
 ## Modes
 Available two compiling file detection modes:
 * Base path is editor project.
-* Tries to extract current path from editable file. It will check if **inputPath** value are in editable file path, and it will be reference point for compiling `Scss` file. Aslo it could be specified based on reference point with **outputPathExtracted**.
+* Tries to extract current path from editable file. It will check if **inputPath** value are in editable file path, and it will be reference point for compiling `Scss` file. Also it could be specified based on reference point with **outputPathExtracted**.
 
 ## Settings
 | Parameter           	| Description                                    	|
@@ -18,8 +18,10 @@ Available two compiling file detection modes:
 | outputPath          	| This specifies where the *CSS* will be saved. ( Path relative to your project ).                                   	|
 | fileName            	| *Scss* type file name, to be parent of all @include.                                                               	|
 | outputStyle         	| `String` to determine how the final *CSS* should be rendered. Its value should be one of `nested` or `compressed`. 	|
-| successMsg          	| Eneable/disable success message.                                                                                   	|
-| extractPath         	| Eneable/disable - Get path from file. ( package tries to extract current path based on editable file and sets reference point ).                              	|
+| successMsg          	| Enable/disable success message.                                                                                   	|
+| extractPath         	| Enable/disable - Get path from file. ( package tries to extract current path based on editable file and sets reference point ).                   
+| sourceMap          	| Enable/disable auto-generated source map ( generated.css.map ).                                                     	|
+|
 | inputPathExtracted  	| Specifies where your *Scss* files are stored. ( Relative to extracted reference point ).                            	|
 | outputPathExtracted 	| Specifies where the *CSS* will be saved. ( Relative to extracted reference point ).                                 	|
 

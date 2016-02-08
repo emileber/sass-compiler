@@ -11,7 +11,7 @@ module.exports = SassCompiler =
 
         outputPath:
             title: 'Output path'
-            description: 'This specifies where the CSS will be saved. ( Path relative to your project ).'
+            description: 'Specifies where the CSS will be saved. ( Path relative to your project ).'
             type: 'string'
             default: './css/'
 
@@ -29,14 +29,14 @@ module.exports = SassCompiler =
             enum: [ 'nested', 'compressed' ]
 
         successMsg:
-            title: 'Eneable/disable success message.'
-            description: 'Turns on/off information about successfull compiling.'
+            title: 'Enable/disable success message.'
+            description: 'Turns on/off information about successful compiling.'
             type: 'boolean'
             default: true
 
         extractPath:
             title: 'Get path from file.'
-            description: 'Eneable/disable ( package tries to extract current path based on editable file and sets reference point ).'
+            description: 'Enable/disable ( package tries to extract current path based on editable file and sets reference point ).'
             type: 'boolean'
             default: false
 
@@ -52,6 +52,11 @@ module.exports = SassCompiler =
             type: 'string'
             default: '../css'
 
+        sourceMap:
+            title: 'Generate source map.'
+            description: 'Enable/disable auto-generated source map (generated.css.map).'
+            type: 'boolean'
+            default: false
 
     activate: (state) ->
         @compiler = new Compiler()
