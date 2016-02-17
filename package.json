@@ -1,7 +1,7 @@
 {
   "name": "sass-compiler",
   "main": "./lib/sass-compiler",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "description": "Sass Compiler based on node-sass library that provides binding for Node.js to libsass. Works only with scss syntax. ",
   "repository": "https://github.com/GomatoX/sass-compiler",
   "license": "MIT",
