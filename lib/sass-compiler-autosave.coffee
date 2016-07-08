@@ -1,4 +1,4 @@
-SassCompiler = require './sass-compiler'
+Compiler = require './compiler'
 
 module.exports = SassCompiler =
 

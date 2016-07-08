@@ -8,10 +8,10 @@ Just add a .sasscompile file in the root of your project. Here an example of the
 
 ```json
 {
-    "input" : "/example/of/your/scss/folder/yourfile.scss",
-    "output" : "/example/of/your/css/folder/main.css",
+    "input" : "example/of/your/scss/folder/yourfile.scss",
+    "output" : "example/of/your/css/folder/main.css",
     "outputstyle" : "nested",
-    "sourcemap" : "/example/of/your/css/folder/main.css.map"
+    "sourcemap" : "example/of/your/css/folder/main.css.map"
 }
 ```
 
